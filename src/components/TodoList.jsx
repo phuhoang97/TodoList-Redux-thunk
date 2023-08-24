@@ -11,8 +11,8 @@ import {
 
 function TodoList() {
   const dispatch = useDispatch();
-  const todos = useSelector(selectAllTodos);
-  const todoStatus = useSelector(selectTodoStatus);
+  const todos = useSelector((state) => state.todolist.todos);
+  const todoStatus = useSelector((state) => state.todolist.status);
 
   const [newTodoTitle, setNewTodoTitle] = useState("");
 

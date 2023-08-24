@@ -76,6 +76,3 @@ const todoSlice = createSlice({
 });
 
 export default todoSlice.reducer;
-
-export const selectAllTodos = (state) => state.todos.todos;
-export const selectTodoStatus = (state) => state.todos.status;
